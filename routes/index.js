@@ -11,7 +11,7 @@ const fs = require('fs');
 
 const upload = multer({ dest: 'uploads/' });
 const speechClient = new SpeechClient({
-  keyFilename: './alexa-local-language.json'
+  keyFilename: '/etc/secrets/alexa-local-language.json'
 });
 
 //Dashboard
